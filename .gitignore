@@ -7,3 +7,6 @@ Cargo.lock
 /**/wasm-pack.log
 /dist
 /pkg
+/pkg-browser
+**/*.DS_Store
+examples/**/package-lock.json

@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./index.js -i ./in.md -o ./out.html"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "wasm_cmark_parse": "^0.1.0"
+    "wasm_cmark_parse": "^0.1.6"
   }
 }

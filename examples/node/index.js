@@ -15,8 +15,8 @@ function readMDFile(file) {
 function writeHTMLFile(file, contents) {
     return new Promise((res, rej) => {
         fs.writeFile(file, contents, err => {
-            if (err) return reject(err);
-            resolve();
+            if (err) return rej(err);
+            res();
         });
     });
 }
@@ -31,10 +31,12 @@ function parseArgs() {
     for (var i = 2; i < args.length; i += 2) {
         if (i >= args.length) break;
         if (args[i] == '-i' || args[i] == '--input') {
-            ret[0] = path.resolve(args[i+1]);
+            let inputPath = path.resolve(args[i+1])
+            ret[0] = inputPath;
         }
         if (args[i] == '-o' || args[i] == '--output') {
-            ret[1] == path.resolve(args[i+1]);
+            let outputPath = path.resolve(args[i+1]);
+            ret[1] = outputPath;
         }
     }
     if (ret[0] == '' || ret[1] == '') {
@@ -51,9 +53,13 @@ function printHelp() {
 
 async function main() {
     let args = parseArgs();
-    let md = await readMDFile(args[0]);
-    let html = md_parser.parse_markdown(md);
-    await writeHTMLFile(args[1], html);
+    try {
+        let md = await readMDFile(args[0]);
+        let html = md_parser.parse_markdown(md);
+        await writeHTMLFile(args[1], html);
+    } catch (e) {
+        return console.error('Error processing markdown to html\n', e);
+    }
+    console.log('Successfully processed markdown to html');
 }
-
 main();
