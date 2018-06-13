@@ -1,6 +1,6 @@
 [package]
 name = "wasm_cmark_parse"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["robert masen <r@robertmasen.pizza>"]
 repository = "https://github.com/FreeMasen/wasm_cmark_parse"
 license = "MIT"
