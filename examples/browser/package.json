@@ -1,6 +1,6 @@
 {
   "name": "wasm_cmark_parse_browser",
-  "version": "0.1.6",
+  "version": "0.1.10",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "wasm_cmark_parse-browser": "^0.1.6"
+    "wasm_cmark_parse": "^0.1.10"
   },
   "devDependencies": {
     "webpack": "^4.12.0",

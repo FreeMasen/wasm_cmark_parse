@@ -1,0 +1,21 @@
+{
+  "name": "wasm_cmark_parse",
+  "collaborators": [
+    "robert masen <r@robertmasen.pizza>"
+  ],
+  "description": "Utility for parsing CommonMark Markdown to HTML",
+  "version": "0.1.10",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FreeMasen/wasm_cmark_parse"
+  },
+  "files": [
+    "wasm_cmark_parse_bg.wasm",
+    "wasm_cmark_parse.d.ts",
+    "wasm_cmark_parse_bg.js",
+    "wasm_cmark_parse_browser.js"
+  ],
+  "main": "wasm_cmark_parse.js",
+  "types": "wasm_cmark_parse.d.ts"
+}

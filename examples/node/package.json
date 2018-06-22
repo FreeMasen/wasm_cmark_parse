@@ -1,6 +1,6 @@
 {
   "name": "wasm_cmark_parse_node",
-  "version": "0.1.0",
+  "version": "0.1.10",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "wasm_cmark_parse": "^0.1.6"
+    "wasm_cmark_parse": "^0.1.10"
   }
 }

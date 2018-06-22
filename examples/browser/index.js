@@ -1,5 +1,6 @@
 let wasm;
-import('wasm_cmark_parse-browser').then(w => {
+import('wasm_cmark_parse').then(w => {
+    console.log('wasm_cmark_parse resolved');
     wasm = w;
     ready();
 });
