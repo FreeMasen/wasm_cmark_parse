@@ -12,10 +12,7 @@
   },
   "files": [
     "wasm_cmark_parse_bg.wasm",
-    "wasm_cmark_parse.d.ts",
-    "wasm_cmark_parse_bg.js",
     "wasm_cmark_parse_browser.js"
   ],
-  "main": "wasm_cmark_parse.js",
-  "types": "wasm_cmark_parse.d.ts"
+  "main": "wasm_cmark_parse.js"
 }

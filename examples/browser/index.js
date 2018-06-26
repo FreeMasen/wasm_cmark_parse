@@ -1,5 +1,5 @@
 let wasm;
-import('wasm_cmark_parse').then(w => {
+import('../../pkg/wasm_cmark_parse').then(w => {
     console.log('wasm_cmark_parse resolved');
     wasm = w;
     ready();

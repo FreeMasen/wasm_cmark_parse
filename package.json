@@ -1,0 +1,26 @@
+{
+  "name": "wasm_cmark_parse",
+  "version": "0.1.11",
+  "description": "Utility for parsing CommonMark to HTML",
+  "main": "wasm_cmark_parse.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freemasen/wasm_cmark_parse.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/freemasen/wasm_cmark_parse/issues"
+  },
+  "homepage": "https://github.com/freemasen/wasm_cmark_parse#readme",
+  "devDependencies": {
+    "webpack": "^4.12.1",
+    "webpack-cli": "^3.0.8"
+  }
+}
